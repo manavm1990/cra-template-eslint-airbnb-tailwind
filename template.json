@@ -1,0 +1,82 @@
+{
+  "package": {
+    "name": "eslint-airbnb-tailwind",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.16.4",
+      "@testing-library/react": "^13.3.0",
+      "@testing-library/user-event": "^13.5.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "5.0.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test"
+    },
+    "eslintConfig": {
+      "env": {
+        "browser": true,
+        "es2021": true
+      },
+      "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:react/jsx-runtime",
+        "react-app/jest",
+        "plugin:testing-library/react",
+        "prettier"
+      ],
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+      },
+      "plugins": ["react"],
+      "rules": {
+        "global-require": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true,
+            "optionalDependencies": false,
+            "peerDependencies": false
+          }
+        ],
+        "no-unused-vars": [
+          "warn",
+          {
+            "destructuredArrayIgnorePattern": "^_"
+          }
+        ]
+      }
+    },
+    "browserslist": {
+      "production": [">0.2%", "not dead", "not op_mini all"],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.4.7",
+      "eslint": "^8.18.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-jsx-a11y": "^6.5.1",
+      "eslint-plugin-react": "^7.30.0",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "postcss": "^8.4.14",
+      "prettier": "2.7.1",
+      "prettier-plugin-tailwindcss": "^0.1.11",
+      "tailwindcss": "^3.1.4"
+    }
+  }
+}

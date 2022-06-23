@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .App-header {
+    @apply flex min-h-screen flex-col items-center justify-center bg-primary-dark text-[calc(10px+2vmin)] text-white;
+  }
+
+  .App-link {
+    @apply text-primary-link;
+  }
+
+  .App-logo {
+    @apply pointer-events-none h-[40vmin] animate-App-logo motion-reduce:animate-none;
+  }
+}
