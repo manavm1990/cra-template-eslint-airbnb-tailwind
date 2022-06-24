@@ -1,5 +1,9 @@
 # Getting Started with Create React App with Stricter Linting, Prettier and Tailwind
 
+This 1️⃣ is kind of opinionated. You have been warned. Try it. You might like it. 
+
+A `components` directory has been created for you in `src`. Kindly remove `.gitkeep` before using.
+
 This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 It now includes [Airbnb's ESLint Configuration](https://www.npmjs.com/package/eslint-config-airbnb), [Prettier](https://prettier.io/), and [Tailwind CSS](https://tailwindcss.com/).
