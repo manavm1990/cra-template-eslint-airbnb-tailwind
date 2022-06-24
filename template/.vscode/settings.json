@@ -12,6 +12,9 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
