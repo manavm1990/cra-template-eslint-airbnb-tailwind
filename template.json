@@ -41,6 +41,12 @@
       "rules": {
         "global-require": "off",
         "import/no-extraneous-dependencies": "off",
+        "jsx-a11y/label-has-associated-control": [
+          "error",
+          {
+            "assert": "either"
+          }
+        ],
         "no-unused-vars": [
           "warn",
           {
