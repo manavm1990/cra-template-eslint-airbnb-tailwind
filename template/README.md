@@ -22,6 +22,8 @@ Check out the [`settings.json`](settings.json) file for more information.
 
 Basically, every time you leave a file (remove focus 🔍) your work is automatically saved. ES Lint and Prettier also kick 🛴 in. For the full application, press 'ctrl/cmd + s'. This will also clean up and organize your imports. Note that this may result in the inadvertent removal of some imports if you imported them but just haven't used them yet. Kindly press 'ctrl/cmd + z' to undo that part as needed.
 
+Also, Emmett is allowed in JSX files.
+
 ## Available Scripts
 
 In the project directory, you can run:
