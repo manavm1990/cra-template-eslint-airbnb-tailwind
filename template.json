@@ -40,14 +40,7 @@
       "plugins": ["react"],
       "rules": {
         "global-require": "off",
-        "import/no-extraneous-dependencies": [
-          "error",
-          {
-            "devDependencies": true,
-            "optionalDependencies": false,
-            "peerDependencies": false
-          }
-        ],
+        "import/no-extraneous-dependencies": "off",
         "no-unused-vars": [
           "warn",
           {
