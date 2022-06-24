@@ -1,6 +1,6 @@
 {
   "name": "cra-template-eslint-airbnb-tailwind",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "This a template based on Create React App that applies stricter linting, code formatting with Prettier and includes Tailwind CSS.",
   "main": "template.json",
   "scripts": {
