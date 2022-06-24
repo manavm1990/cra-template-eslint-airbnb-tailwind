@@ -12,3 +12,4 @@ Using it? ⭐ it please. Hit me up [@gocodefinity](https://twitter.com/GoCodeFin
 1.0.2: Updated ES Lint rules
 1.0.3: Set VS Code to allow Emmet in JSX
 1.0.4: Include `components` directory in `src` 🤯
+1.1.1: Updated semver to 1.1.1
