@@ -1,6 +1,6 @@
 # Getting Started with Create React App with Stricter Linting, Prettier and Tailwind
 
-This 1️⃣ is kind of opinionated. You have been warned. Try it. You might like it. 
+This 1️⃣ is kind of opinionated. You have been warned. Try it. You might like it.
 
 A `components` directory has been created for you in `src`. Kindly remove `.gitkeep` before using.
 
@@ -9,6 +9,29 @@ This project was originally bootstrapped with [Create React App](https://github.
 It now includes [Airbnb's ESLint Configuration](https://www.npmjs.com/package/eslint-config-airbnb), [Prettier](https://prettier.io/), and [Tailwind CSS](https://tailwindcss.com/).
 
 The ESLint rules have been slightly customized as per [`package.json`](package.json). [Automatic Class Sorting with Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) is also taken care of in the [`prettier.config.js`](prettier.config.js) file.
+
+## Absolute Imports
+
+This feature is now enabled by default via `jsconfig.json`.
+
+ESLint usually complains about absolute imports. This is from the rule: `"import/no-unresolved"`. ESLint will not about `jsconfig.json`, so will not recognize our absolute imports, thinking that they are incorrect.
+
+To alleviate this, some commonly used directories names are listed under `"import/no-unresolved"`. You can see this by checking the `"rules"` section of `package.json` (under `"eslintConfig"`):
+
+```json
+ "import/no-unresolved": [
+        2,
+        {
+          "ignore": [
+            "^components",
+            "^services",
+            "^types"
+          ]
+        }
+      ],
+```
+
+So, for any directories, maybe `views` or `pages` or `utils` or `hooks`, you can keep adding to the list as you need. Include the `^` in front of the directory name because that is the regex so that it will ignore any paths that start with that directory name.
 
 ## VS Code
 
