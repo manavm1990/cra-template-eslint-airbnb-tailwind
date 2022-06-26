@@ -41,6 +41,16 @@
       "rules": {
         "global-require": "off",
         "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": [
+        2,
+        {
+          "ignore": [
+            "^components",
+            "^services",
+            "^types"
+          ]
+        }
+      ],
         "jsx-a11y/label-has-associated-control": [
           "error",
           {
